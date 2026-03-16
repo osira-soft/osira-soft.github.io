@@ -223,6 +223,12 @@ nav a:hover {
   justify-content: center;
   font-size: 40px;
   margin-bottom: 24px;
+  overflow: hidden;
+}
+.app-hero-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .app-hero h1 {
   font-size: 40px;

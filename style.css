@@ -201,12 +201,18 @@ nav a:hover {
   padding: 64px 0 52px;
   border-bottom: 1px solid var(--border);
 }
+.app-hero-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
 .app-hero-icon {
-  width: 88px;
-  height: 88px;
-  border-radius: 20px;
-  margin-bottom: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
   object-fit: contain;
+  flex-shrink: 0;
 }
 .app-hero h1 {
   font-size: 40px;

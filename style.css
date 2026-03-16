@@ -127,7 +127,10 @@ nav a:hover {
 .app-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 1px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 .app-card {
   position: relative;
@@ -136,8 +139,6 @@ nav a:hover {
   gap: 20px;
   padding: 20px 24px;
   background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
   text-decoration: none;
   color: var(--text);
   transition: background 0.1s;
@@ -145,6 +146,9 @@ nav a:hover {
 .app-card:hover {
   background: var(--border);
   text-decoration: none;
+}
+.app-card + .app-card {
+  border-top: 1px solid var(--border);
 }
 .app-icon {
   width: 56px;
@@ -348,6 +352,28 @@ nav a:hover {
 .how-step p {
   font-size: 13px;
   color: var(--text-secondary);
+}
+
+/* ── Screenshots ── */
+.screenshots {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+.screenshot-iphone {
+  height: 480px;
+  width: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  flex-shrink: 0;
+}
+.screenshot-mac {
+  height: 320px;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  flex-shrink: 0;
 }
 
 /* ── Requirements ── */

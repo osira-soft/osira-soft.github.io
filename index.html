@@ -15,14 +15,18 @@
     <a href="index.html" class="header-logo">osira-soft</a>
     <nav>
       <a href="https://github.com/osira-soft">GitHub</a>
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang="ja">JP</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
     </nav>
   </div>
 </header>
 
 <main class="page">
   <div class="top-hero">
-    <h1>シンプルで、<br>使いやすいアプリを。</h1>
-    <p>macOS / iOS 向けのユーティリティアプリを開発しています。</p>
+    <h1 data-en="Simple,&lt;br&gt;easy-to-use apps.">シンプルで、<br>使いやすいアプリを。</h1>
+    <p data-en="Developing utility apps for macOS and iOS.">macOS / iOS 向けのユーティリティアプリを開発しています。</p>
   </div>
 
   <div class="apps-section">
@@ -33,26 +37,26 @@
         <img src="cmdlang/icon.png" alt="CmdLang" class="app-icon">
         <div class="app-info">
           <h3>CmdLang</h3>
-          <p>左右の Command キーで入力ソースを切り替えるメニューバーユーティリティ</p>
+          <p data-en="A menu bar utility that switches input sources using left/right Command keys.">左右の Command キーで入力ソースを切り替えるメニューバーユーティリティ</p>
         </div>
         <div class="app-meta">
           <span class="badge macos">macOS</span>
           <span class="arrow">›</span>
         </div>
-        <span class="app-updated">最終更新：2026-03-15</span>
+        <span class="app-updated" data-en="Updated: 2026-03-15">最終更新：2026-03-15</span>
       </a>
 
       <a href="tidescope/index.html" class="app-card">
         <img src="tidescope/icon.png" alt="TideScope" class="app-icon">
         <div class="app-info">
           <h3>TideScope</h3>
-          <p>気象庁全国238観測局の潮位データをもとに、満潮・干潮・潮回りをリアルタイムで確認</p>
+          <p data-en="Real-time tide info from 238 JMA stations — high/low tides, tidal cycles, and more.">気象庁全国238観測局の潮位データをもとに、満潮・干潮・潮回りをリアルタイムで確認</p>
         </div>
         <div class="app-meta">
           <span class="badge ios">iOS</span>
           <span class="arrow">›</span>
         </div>
-        <span class="app-updated">最終更新：2026-03-16</span>
+        <span class="app-updated" data-en="Updated: 2026-03-16">最終更新：2026-03-16</span>
       </a>
 
       <!-- 今後のアプリはここに追加 -->
@@ -70,5 +74,6 @@
   </div>
 </footer>
 
+<script src="lang.js"></script>
 </body>
 </html>

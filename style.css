@@ -357,9 +357,30 @@ nav a:hover {
 /* ── Screenshots ── */
 .screenshots {
   display: flex;
-  gap: 16px;
-  overflow-x: auto;
-  padding-bottom: 8px;
+  flex-direction: column;
+  gap: 40px;
+}
+.screenshot-row {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.screenshot-img-wrap {
+  width: 480px;
+  flex-shrink: 0;
+}
+.screenshot-desc {
+  flex: 1;
+}
+.screenshot-desc h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.screenshot-desc p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
 }
 .screenshot-iphone {
   height: 480px;
@@ -369,7 +390,7 @@ nav a:hover {
   flex-shrink: 0;
 }
 .screenshot-mac {
-  height: 320px;
+  height: 240px;
   width: auto;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.12);

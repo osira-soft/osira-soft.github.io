@@ -130,6 +130,7 @@ nav a:hover {
   gap: 12px;
 }
 .app-card {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -176,6 +177,9 @@ nav a:hover {
   flex-shrink: 0;
 }
 .app-updated {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
   font-size: 10px;
   color: var(--text-secondary);
 }

@@ -148,10 +148,7 @@ nav a:hover {
 .app-list {
   display: flex;
   flex-direction: column;
-  gap: 1px;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
+  gap: 12px;
 }
 .app-card {
   position: relative;
@@ -160,6 +157,8 @@ nav a:hover {
   gap: 20px;
   padding: 20px 24px;
   background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   text-decoration: none;
   color: var(--text);
   transition: background 0.1s;
@@ -167,9 +166,6 @@ nav a:hover {
 .app-card:hover {
   background: var(--border);
   text-decoration: none;
-}
-.app-card + .app-card {
-  border-top: 1px solid var(--border);
 }
 .app-icon {
   width: 56px;

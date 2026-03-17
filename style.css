@@ -393,6 +393,17 @@ nav a:hover {
   color: var(--text-secondary);
   line-height: 1.6;
 }
+.screenshot-pair {
+  display: flex;
+  gap: 12px;
+}
+.screenshot-watch {
+  height: 180px;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  flex-shrink: 0;
+}
 .screenshot-iphone {
   height: 480px;
   width: auto;

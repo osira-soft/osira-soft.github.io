@@ -12,6 +12,21 @@
     });
   }
 
+  function initNav() {
+    var toggle = document.querySelector('.nav-toggle');
+    var nav = document.querySelector('nav');
+    if (!toggle || !nav) return;
+    toggle.addEventListener('click', function () {
+      nav.classList.toggle('open');
+    });
+    // メニュー内リンクをタップしたら閉じる
+    nav.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        nav.classList.remove('open');
+      });
+    });
+  }
+
   function init() {
     var lang = localStorage.getItem(KEY) || 'ja';
     apply(lang);
@@ -21,6 +36,7 @@
         apply(btn.dataset.lang);
       });
     });
+    initNav();
   }
 
   document.readyState === 'loading'

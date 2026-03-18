@@ -570,10 +570,53 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .top-hero { padding: 48px 0 36px; }
   .top-hero h1 { font-size: 30px; }
+  .top-hero p { font-size: 16px; }
+  .app-hero { padding: 40px 0 36px; }
   .app-hero h1 { font-size: 30px; }
   .app-hero .tagline { font-size: 17px; }
+  .section { padding: 36px 0; }
   .section-title { font-size: 23px; }
   .btn-ghost { display: none; }
+
+  /* ナビゲーション：横スクロール可能に */
+  nav {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    flex-shrink: 1;
+    min-width: 0;
+  }
+  nav a { white-space: nowrap; font-size: 13px; }
+
+  /* アプリカード説明文の折り返し */
+  .app-info p {
+    white-space: normal;
+  }
+  .app-card {
+    padding: 16px;
+    gap: 14px;
+  }
+
+  /* スクリーンショットをビューポート幅に収める */
+  .screenshot-iphone {
+    height: auto;
+    width: 100%;
+    max-width: 280px;
+  }
+  .screenshot-mac {
+    height: auto;
+    width: 100%;
+  }
+  .screenshot-watch {
+    height: auto;
+    width: 120px;
+  }
+  .screenshot-pair {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* フッター */
   .footer-inner { flex-direction: column; align-items: flex-start; }
 }

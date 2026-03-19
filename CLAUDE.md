@@ -48,3 +48,8 @@ osira-soft の公式サイト兼アプリランディングページ。GitHub Pa
 - GitHub プロフィール用 PNG を生成（`logo.png`, 512×512px）
 - `logo-512.svg` の text の y 位置を 256 → 310 に調整（AppKit レンダリング時の縦ズレを修正）
 - PNG 変換は `osascript` + AppKit (NSImage) を使用（sips/qlmanage はぼやけ・余白の問題あり）
+
+### 2026-03-19
+- TideScope App Store 公開に伴い、ダウンロードリンクを更新（`tidescope/index.html`）
+  - GitHub リンク → App Store URL（https://apps.apple.com/jp/app/tidescope/id6760695853）
+  - 「近日公開予定」「審査申請準備中」テキストを削除
